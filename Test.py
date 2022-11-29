@@ -9,7 +9,7 @@ class Maths(unittest.TestCase):
 
     def test_Subtraction(self):
         diff = Diff(50, 10)
-        self.assertEqual(diff, 40)
+        self.assertEqual(diff, 30)
 
     def test_Division(self):
         div = Quot(30, 10)
