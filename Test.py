@@ -8,11 +8,11 @@ from Division import Quot
 class Maths(unittest.TestCase):
 
     def test_Subtraction(self):
-        diff = Diff(20, 10)
+        diff = Diff(10, 10)
         self.assertEqual(diff, 10)
 
     def test_Division(self):
-        div = Quot(20, 10)
+        div = Quot(10, 10)
         self.assertEqual(div, 2)
 
 if __name__ == '__main__':
