@@ -3,7 +3,7 @@
 import unittest
 
 from Subtraction import Diff
-from Task2 import Quot
+from Division import Quot
 
 class Maths(unittest.TestCase):
 
