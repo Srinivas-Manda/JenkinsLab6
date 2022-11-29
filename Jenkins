@@ -1,0 +1,28 @@
+pipeline { 
+    agent any
+    stages {
+        stage('Clone Git') {
+            steps {
+                git 'https://github.com/Srinivas-Manda/JenkinsLab6.git'
+            }
+        }
+        stage('Code Build for Program 1') {
+            steps {
+                sh "chmod u+x Subtraction.py"
+                sh "./Subtraction.py"
+            }
+        }
+        stage('Code Build for Program 2'){
+            steps {
+                sh "chmod u+x Division.py"
+                sh "./Division.py"
+            }
+        }
+        stage('Testing stage') {
+            steps {
+                sh "chmod u+x Test.py"
+                sh "./Test.py"
+            }
+        }
+    } 
+}
